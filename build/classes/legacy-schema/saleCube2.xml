@@ -1,0 +1,16 @@
+<Schema name="&#38144;&#21806;cube2">
+  <Cube name="&#38144;&#21806;cube2" visible="true" cache="true" enabled="true">
+    <Table name="sale">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="cusId" highCardinality="false" name="&#29992;&#25143;&#32500;&#24230;">
+      <Hierarchy name="&#23618;&#27425;" visible="true" hasAll="true" allMemberName="allCus" allMemberCaption="&#25152;&#26377;&#23458;&#25143;" primaryKey="cusId">
+        <Table name="customer">
+        </Table>
+        <Level name="&#24615;&#21035;" visible="true" column="gender" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="&#38144;&#21806;&#25968;&#37327;" column="number" aggregator="sum" caption="&#25968;&#37327;" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

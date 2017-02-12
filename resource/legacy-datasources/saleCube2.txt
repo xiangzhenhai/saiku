@@ -1,0 +1,6 @@
+type=OLAP
+name=K12StudentLearnAnalysis
+driver=mondrian.olap4j.MondrianOlap4jDriver
+location=jdbc:mondrian:Jdbc=jdbc:mysql://localhost:3306/cubetest?useUnicode=true&characterEncoding=utf8;Catalog=res:legacy-schemas/saleCube2.xml;JdbcDrivers=com.mysql.jdbc.Driver
+username=root
+password=root
